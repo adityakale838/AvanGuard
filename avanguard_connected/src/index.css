@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme color configuration - Editorial Aesthetic Layout */
+  --color-bg-deep: #F5F2ED;
+  --color-surface: #FCFAF7;
+  --color-surface-container-lowest: #F5F2ED;
+  --color-surface-container-low: #EFECE6;
+  --color-surface-container: #ECE8E0;
+  --color-surface-container-high: #E3DDD3;
+  --color-surface-container-highest: #D7CFC2;
+  --color-outline: #8B8172;
+  --color-outline-variant: rgba(26, 26, 26, 0.12);
+  --color-on-surface: #1A1A1A;
+  --color-on-surface-variant: #5E564A;
+  --color-primary: #1A1A1A;
+  --color-on-primary: #FCFAF7;
+  --color-primary-container: #EFECE6;
+  --color-secondary: #8B8172;
+  --color-secondary-container: #EAE5DE;
+  --color-on-secondary-container: #1A1A1A;
+  --color-error: #A83232;
+  --color-error-container: #FCE8E6;
+  --color-on-error-container: #6F1B1B;
+  --color-status-info: #1D4F91;
+  --color-status-success: #2E6F40;
+  --color-status-warning: #9F701E;
+  --color-status-critical: #A83232;
+}
+
+/* Custom Scrollbar - Minimal Editorial Style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7CFC2;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B8172;
+}
+
+/* Base body style for global consistency with Editorial theme */
+body {
+  background-color: #F5F2ED;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+}
+
+/* Editorial Serif & Sans Text Helper Styles */
+.serif-display {
+  font-family: var(--font-serif);
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.tracking-wide-editorial {
+  letter-spacing: 0.15em;
+}
+
+.tracking-widest-editorial {
+  letter-spacing: 0.25em;
+}
+
+/* UI Micro-interactions and Keyframe Transitions */
+@keyframes slideIn {
+  0% { transform: translateX(20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,0 +1,71 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+*.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Node modules
+node_modules/
+.npm
+*.tsbuildinfo
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Databases
+*.db
+avanguard.db
+*.sqlite
+*.sqlite3
+
+# Logs and Evaluation Outputs
+evaluation_results_log.csv
+*.log
+logs/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build and cache files
+.cache/
+*.cache
+dist/
+build/
+coverage/
+
+# Test outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/
+
+# Data files (if too large)
+data/*.csv
+data/*.pickle
+data/*.pkl
+cache.*

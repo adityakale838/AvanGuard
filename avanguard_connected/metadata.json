@@ -1,0 +1,6 @@
+{
+  "name": "AvanGuard",
+  "description": "An LLM security proxy operations dashboard for pipeline validation, event audit logs, security rules, review queues, and threat metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
